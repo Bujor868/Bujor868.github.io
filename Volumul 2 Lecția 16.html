@@ -1,0 +1,613 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="罗马尼亚语第16课《北京的美景》互动学习课件：课文点读、词形变化、重点句法和练习答案。">
+  <title>第16课｜Frumusețile Beijingului</title>
+  <style>
+    :root {
+      --ink: #14253d;
+      --muted: #667085;
+      --paper: #f6f8fc;
+      --surface: #ffffff;
+      --line: #dbe2ec;
+      --blue: #155eef;
+      --blue-dark: #0b3fa5;
+      --yellow: #f4c430;
+      --red: #c82635;
+      --mint: #eaf8f3;
+      --amber: #fff5cf;
+      --sky: #eaf1ff;
+      --rose: #fff0f1;
+      --shadow: 0 16px 50px rgba(20, 37, 61, .10);
+      --radius: 18px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--paper);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans SC", Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.72;
+    }
+    button, input, textarea, select { font: inherit; }
+    button { cursor: pointer; }
+    a { color: inherit; }
+    :focus-visible { outline: 3px solid rgba(21, 94, 239, .35); outline-offset: 2px; }
+    .flag-line { height: 5px; background: linear-gradient(90deg, #002b7f 0 33.3%, #fcd116 33.3% 66.6%, #ce1126 66.6%); }
+    .topbar {
+      position: sticky; top: 0; z-index: 20;
+      display: flex; align-items: center; gap: 18px;
+      min-height: 66px; padding: 10px clamp(18px, 4vw, 58px);
+      background: rgba(255,255,255,.94); border-bottom: 1px solid var(--line);
+      backdrop-filter: blur(16px);
+    }
+    .brand { display: flex; align-items: center; gap: 11px; min-width: max-content; }
+    .lesson-no {
+      display: grid; place-items: center; width: 38px; height: 38px;
+      border-radius: 12px; background: var(--ink); color: white; font-weight: 800;
+    }
+    .brand strong { display: block; line-height: 1.15; }
+    .brand small { display: block; color: var(--muted); font-size: .76rem; }
+    nav { display: flex; gap: 4px; overflow-x: auto; margin-left: auto; scrollbar-width: none; }
+    nav a { text-decoration: none; white-space: nowrap; padding: 8px 11px; border-radius: 9px; color: #43516a; font-size: .91rem; font-weight: 650; }
+    nav a:hover { color: var(--blue); background: var(--sky); }
+    .shell { display: flex; flex-direction: column; max-width: 1320px; margin: 0 auto; padding: 30px clamp(18px, 4vw, 54px) 90px; }
+    .intro { order: 0; }
+    #text { order: 1; } #vocab { order: 2; } #expressions { order: 3; } #grammar { order: 4; }
+    #romania-context { order: 5; } #reading { order: 6; } #exercises { order: 7; } .footer { order: 8; }
+    .intro {
+      display: grid; grid-template-columns: 1.45fr .8fr; gap: 24px; align-items: stretch;
+      margin-bottom: 26px;
+    }
+    .intro-main, .study-path { border: 1px solid var(--line); border-radius: 22px; background: var(--surface); box-shadow: var(--shadow); }
+    .intro-main { padding: clamp(24px, 4vw, 48px); position: relative; overflow: hidden; }
+    .intro-main::after { content: "16"; position: absolute; right: 20px; bottom: -55px; color: #eef3fc; font-size: 12rem; font-weight: 900; line-height: 1; z-index: 0; }
+    .eyebrow { margin: 0 0 6px; color: var(--blue); font-size: .82rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+    h1 { position: relative; z-index: 1; margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: clamp(2.1rem, 5vw, 4.4rem); line-height: 1.02; letter-spacing: -.035em; }
+    .intro-cn { position: relative; z-index: 1; margin: 12px 0 0; font-size: 1.15rem; color: #46556c; }
+    .legend { position: relative; z-index: 1; display: flex; flex-wrap: wrap; gap: 10px; margin-top: 25px; }
+    .legend span { display: inline-flex; align-items: center; gap: 7px; font-size: .87rem; color: #526078; }
+    .dot { width: 11px; height: 11px; border-radius: 3px; }
+    .dot.vocab { background: var(--amber); border: 1px solid #e3bc25; }
+    .dot.expression { background: var(--sky); border: 1px solid #94b7ff; }
+    .dot.sentence { background: var(--rose); border: 1px solid #f1a6ad; }
+    .study-path { padding: 24px; background: var(--ink); color: white; }
+    .study-path h2 { margin: 0 0 16px; font-size: 1.1rem; }
+    .path-step { display: grid; grid-template-columns: 30px 1fr; gap: 10px; align-items: start; margin: 13px 0; }
+    .path-step b { display: grid; place-items: center; width: 28px; height: 28px; border: 1px solid rgba(255,255,255,.22); border-radius: 9px; color: var(--yellow); }
+    .path-step span { color: #dbe7f6; font-size: .91rem; }
+    .section { scroll-margin-top: 82px; margin-top: 34px; }
+    .section-head { display: flex; gap: 16px; align-items: end; justify-content: space-between; margin-bottom: 16px; }
+    .section-head h2 { margin: 0; font-size: clamp(1.45rem, 3vw, 2.15rem); letter-spacing: -.025em; }
+    .section-head p { margin: 4px 0 0; color: var(--muted); }
+    .toolbar { display: flex; flex-wrap: wrap; gap: 8px; }
+    .chip, .action {
+      border: 1px solid var(--line); background: white; color: var(--ink);
+      border-radius: 10px; padding: 8px 12px; font-weight: 700; font-size: .88rem;
+    }
+    .chip[aria-pressed="true"] { background: var(--ink); color: white; border-color: var(--ink); }
+    .reading-layout { display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: 20px; align-items: start; }
+    .reader { border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); box-shadow: var(--shadow); overflow: hidden; }
+    .reader-top { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 15px 20px; border-bottom: 1px solid var(--line); background: #fbfcff; }
+    .reader-top span { color: var(--muted); font-size: .86rem; }
+    .text-body { padding: clamp(23px, 5vw, 52px); font-family: Georgia, "Times New Roman", serif; font-size: 1.14rem; line-height: 1.9; }
+    .text-body p { margin: 0 0 1.25em; text-indent: 2em; }
+    .term {
+      display: inline; border: 0; border-bottom: 1px dashed #a87700; border-radius: 4px;
+      padding: 0 2px; margin: 0; color: inherit; background: var(--amber); font: inherit; line-height: inherit;
+    }
+    .term.expression { background: var(--sky); border-bottom-color: var(--blue); }
+    .term:hover { box-shadow: 0 0 0 3px rgba(244,196,48,.26); }
+    body.hide-terms .term { background: transparent; border-bottom-color: transparent; }
+    .key-sentence { border-radius: 6px; box-decoration-break: clone; -webkit-box-decoration-break: clone; transition: background .2s; }
+    body.show-sentences .key-sentence { background: linear-gradient(transparent 74%, #ffdce0 74%); cursor: pointer; }
+    .reading-note { position: sticky; top: 86px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); padding: 20px; }
+    .reading-note h3 { margin: 0 0 10px; font-size: 1rem; }
+    .reading-note p { color: var(--muted); font-size: .9rem; margin: 7px 0; }
+    .mini-list { display: grid; gap: 8px; margin-top: 16px; }
+    .mini-list button { text-align: left; border: 0; border-left: 3px solid #e4eaf3; background: transparent; padding: 6px 9px; color: #4b5870; font-size: .88rem; }
+    .mini-list button:hover { border-left-color: var(--red); color: var(--ink); background: var(--rose); }
+    .card { border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); box-shadow: 0 8px 30px rgba(20,37,61,.06); }
+    .vocab-tools { display: grid; grid-template-columns: 1fr auto; gap: 10px; padding: 15px; border-bottom: 1px solid var(--line); }
+    .search { width: 100%; border: 1px solid #cdd6e2; border-radius: 11px; padding: 11px 13px; color: var(--ink); }
+    .vocab-grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 12px; padding: 16px; }
+    .vocab-card { min-height: 138px; border: 1px solid var(--line); border-radius: 14px; padding: 15px; background: white; text-align: left; transition: .18s ease; }
+    .vocab-card:hover { transform: translateY(-2px); border-color: #9ab8ee; box-shadow: 0 10px 25px rgba(21,94,239,.10); }
+    .vocab-card .lemma { font-family: Georgia, serif; font-weight: 800; font-size: 1.08rem; }
+    .vocab-card .pos { display: inline-block; margin-left: 6px; color: var(--blue); font-size: .74rem; font-family: ui-sans-serif, system-ui; font-weight: 800; }
+    .vocab-card .meaning { margin-top: 8px; color: #33425b; }
+    .vocab-card .en { color: var(--muted); font-size: .86rem; }
+    .morph-box { margin-top: 9px; padding-top: 8px; border-top: 1px dashed var(--line); color: #5f6e84; font-size: .8rem; }
+    .expression-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+    .expression-card { padding: 20px; }
+    .expression-card h3 { margin: 0; font-family: Georgia, serif; }
+    .expression-card .conj { margin: 4px 0 12px; color: var(--blue); font-size: .83rem; font-weight: 700; }
+    .sense { margin: 10px 0; padding: 11px 12px; background: #f8faff; border-radius: 10px; }
+    .sense strong { display: block; }
+    .sense small { color: var(--muted); }
+    .grammar-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 16px; }
+    .grammar-card { padding: 22px; }
+    .grammar-card.wide { grid-column: 1 / -1; }
+    .grammar-card h3 { margin: 0 0 8px; }
+    .bilingual { display: grid; grid-template-columns: 1fr 1fr; gap: 9px; margin: 12px 0; }
+    .lang-note { padding: 10px 12px; border-radius: 10px; background: #f5f8fd; color: #41506a; font-size: .89rem; }
+    table { width: 100%; border-collapse: collapse; font-size: .91rem; }
+    th, td { text-align: left; vertical-align: top; padding: 10px; border-bottom: 1px solid var(--line); }
+    th { color: #43516a; background: #f8faff; }
+    .builder { margin-top: 16px; padding: 15px; border-radius: 13px; background: var(--ink); color: white; }
+    .builder-controls { display: grid; grid-template-columns: 1fr 1.4fr auto; gap: 8px; }
+    .builder select, .builder button { border: 1px solid rgba(255,255,255,.18); border-radius: 9px; padding: 9px; }
+    .builder button { color: var(--ink); background: var(--yellow); font-weight: 800; }
+    .builder-output { margin-top: 11px; min-height: 32px; color: #eaf1ff; font-size: 1.02rem; }
+    .case-demo { display: grid; grid-template-columns: 1fr auto 1fr; gap: 8px; align-items: center; margin: 14px 0; }
+    .token { padding: 10px; border-radius: 10px; background: var(--sky); text-align: center; font-weight: 750; }
+    .arrow { color: var(--blue); font-weight: 900; }
+    details.exercise { overflow: hidden; margin: 12px 0; }
+    details.exercise > summary { list-style: none; display: flex; gap: 12px; align-items: center; padding: 17px 19px; cursor: pointer; font-weight: 800; }
+    details.exercise > summary::-webkit-details-marker { display: none; }
+    .ex-no { display: grid; place-items: center; flex: 0 0 32px; height: 32px; border-radius: 10px; background: var(--ink); color: white; }
+    .ex-tag { margin-left: auto; color: var(--muted); font-weight: 600; font-size: .8rem; }
+    .exercise-body { padding: 0 19px 20px; border-top: 1px solid var(--line); }
+    .prompt { margin: 14px 0; color: #34435b; }
+    .item { margin: 12px 0; }
+    .item label { display: block; margin-bottom: 5px; font-weight: 650; }
+    .item input, .item textarea, .item select { width: 100%; border: 1px solid #cbd5e1; border-radius: 10px; padding: 10px 12px; background: white; color: var(--ink); }
+    .item textarea { min-height: 90px; resize: vertical; }
+    .inline-sentence { display: grid; grid-template-columns: minmax(220px,auto) minmax(180px,1fr); gap: 8px; align-items: center; }
+    .exercise-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin-top: 16px; }
+    .submit-btn { border: 0; border-radius: 10px; padding: 10px 15px; background: var(--blue); color: white; font-weight: 800; }
+    .submit-btn:hover { background: var(--blue-dark); }
+    .status { color: var(--muted); font-size: .88rem; }
+    .answer-panel { display: none; margin-top: 16px; padding: 16px; border-left: 4px solid #20a16b; border-radius: 10px; background: var(--mint); }
+    .answer-panel.visible { display: block; animation: reveal .25s ease; }
+    .answer-panel h4 { margin: 0 0 7px; }
+    .answer-panel p, .answer-panel li { margin-top: 4px; }
+    .correct { border-color: #20a16b !important; background: #f0fff8 !important; }
+    .incorrect { border-color: var(--red) !important; background: #fff5f5 !important; }
+    @keyframes reveal { from { opacity: 0; transform: translateY(-5px); } to { opacity: 1; transform: none; } }
+    .supplement { padding: clamp(20px,4vw,38px); }
+    .supplement details { border-top: 1px solid var(--line); padding-top: 12px; }
+    .supplement summary { cursor: pointer; font-weight: 800; }
+    .supplement-text { font-family: Georgia, serif; margin-top: 18px; }
+    .proverbs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 18px; }
+    .proverb { padding: 13px; border-radius: 12px; background: var(--ink); color: white; }
+    .proverb small { display: block; margin-top: 5px; color: #cbd8e8; }
+    .drawer-backdrop { position: fixed; inset: 0; z-index: 40; background: rgba(7,18,34,.36); opacity: 0; visibility: hidden; transition: .2s; }
+    .drawer-backdrop.open { opacity: 1; visibility: visible; }
+    .drawer {
+      position: fixed; z-index: 50; top: 0; right: 0; width: min(470px, 94vw); height: 100dvh;
+      overflow-y: auto; padding: 26px; background: white; box-shadow: -20px 0 60px rgba(9,26,52,.18);
+      transform: translateX(104%); transition: transform .25s ease;
+    }
+    .drawer.open { transform: none; }
+    .drawer-close { float: right; border: 1px solid var(--line); width: 38px; height: 38px; border-radius: 11px; background: white; font-size: 1.15rem; }
+    .drawer-kicker { color: var(--blue); font-size: .78rem; font-weight: 850; letter-spacing: .1em; text-transform: uppercase; }
+    .drawer h2 { clear: both; margin: 6px 0 2px; font-family: Georgia, serif; font-size: 2rem; }
+    .drawer .meaning-big { font-size: 1.05rem; color: #38475f; }
+    .drawer-section { margin-top: 22px; }
+    .drawer-section h3 { font-size: .93rem; margin: 0 0 8px; color: #526078; text-transform: uppercase; letter-spacing: .06em; }
+    .example { margin: 8px 0; padding: 11px; border-radius: 10px; background: #f7f9fc; }
+    .example strong { display: block; font-family: Georgia, serif; }
+    .example span { display: block; color: var(--muted); font-size: .85rem; }
+    .footer { margin-top: 42px; padding-top: 20px; border-top: 1px solid var(--line); color: var(--muted); text-align: center; font-size: .86rem; }
+    @media (max-width: 980px) {
+      .intro, .reading-layout, .grammar-grid { grid-template-columns: 1fr; }
+      .reading-note { position: static; }
+      .vocab-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
+      .grammar-card.wide { grid-column: auto; }
+      .expression-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 680px) {
+      .topbar { align-items: flex-start; flex-direction: column; gap: 6px; }
+      nav { width: 100%; margin: 0; }
+      .shell { padding-top: 18px; }
+      .vocab-grid { grid-template-columns: 1fr; }
+      .vocab-tools, .builder-controls, .bilingual, .inline-sentence { grid-template-columns: 1fr; }
+      .proverbs { grid-template-columns: 1fr; }
+      .text-body { font-size: 1.05rem; padding: 22px; }
+      .section-head { align-items: flex-start; flex-direction: column; }
+    }
+    @media print {
+      .topbar, .toolbar, .reading-note, .drawer, .drawer-backdrop, .submit-btn { display: none !important; }
+      body { background: white; }
+      .shell { max-width: none; padding: 0; }
+      .card, .reader, .intro-main, .study-path { box-shadow: none; break-inside: avoid; }
+      .answer-panel.visible { display: block; }
+    }
+  </style>
+</head>
+<body class="show-sentences">
+  <div class="flag-line"></div>
+  <header class="topbar">
+    <div class="brand"><span class="lesson-no">16</span><div><strong>Limba română</strong><small>互动课文与练习</small></div></div>
+    <nav aria-label="课程导航">
+      <a href="#text">课文</a><a href="#vocab">词汇</a><a href="#expressions">词语搭配</a><a href="#grammar">语法</a><a href="#reading">拓展阅读</a><a href="#exercises">练习</a>
+    </nav>
+  </header>
+
+  <main class="shell">
+    <section class="intro" aria-labelledby="page-title">
+      <div class="intro-main">
+        <p class="eyebrow">Lecția 16 · Text</p>
+        <h1 id="page-title">Frumusețile<br>Beijingului</h1>
+        <p class="intro-cn">北京的美景 · 词汇、词形与句法一体化阅读</p>
+        <div class="legend"><span><i class="dot vocab"></i>教材生词</span><span><i class="dot expression"></i>重点搭配</span><span><i class="dot sentence"></i>重点句</span></div>
+      </div>
+      <aside class="study-path">
+        <h2>建议学习路径 · Study path</h2>
+        <div class="path-step"><b>1</b><span>先浏览词汇，认识词性与基本词形。<br>Preview words, parts of speech and forms.</span></div>
+        <div class="path-step"><b>2</b><span>阅读课文，点击黄色或蓝色词汇查看详解。<br>Read and click highlighted words.</span></div>
+        <div class="path-step"><b>3</b><span>点击重点句，观察句子结构与翻译。<br>Open key sentences for syntax.</span></div>
+        <div class="path-step"><b>4</b><span>结合语法演示完成练习，提交后再核对答案。<br>Practise first; reveal answers after submission.</span></div>
+      </aside>
+    </section>
+
+    <section class="section" id="text">
+      <div class="section-head">
+        <div><h2>课文点读</h2><p>点击词汇查看中英释义、词形和教材例句；点击粉色下划线句查看句法。</p></div>
+        <div class="toolbar"><button class="chip" id="toggleTerms" aria-pressed="true">词汇高亮</button><button class="chip" id="toggleSentences" aria-pressed="true">重点句</button></div>
+      </div>
+      <div class="reading-layout">
+        <article class="reader">
+          <div class="reader-top"><strong>FRUMUSEȚILE BEIJINGULUI</strong><span>正文 · Text principal</span></div>
+          <div class="text-body">
+            <p><span class="key-sentence" data-sentence="s1">Orașul Beijing, capitala R.P. Chineze, este centrul politic, cultural, științific și de învățământ, precum și un important <button class="term" data-term="nod">nod</button> de <button class="term" data-term="comunicatie">comunicații</button> pentru întreaga țară.</span></p>
+            <p>Beijing a fost capitala <button class="term" data-term="dinastie">dinastiilor</button> Jin (1115–1234), Yuan (1271–1368), Ming (1368–1644) și Qing (1644–1911) și 33 de <button class="term" data-term="imparat">împărați</button> au <button class="term expression" data-term="domni">domnit</button> în acest oraș. <span class="key-sentence" data-sentence="s2">Aici se <button class="term expression" data-term="gasi">găsesc</button> peste 200 de <button class="term" data-term="obiectiv">obiective</button> cultural-istorice și <button class="term" data-term="turistic">turistice</button>.</span></p>
+            <p>Piața Tian’anmen (Piața Păcii Cerești) constituie inima orașului și are o suprafață de 44 de <button class="term" data-term="hectar">hectare</button>. <span class="key-sentence" data-sentence="s3">Acolo se află poarta cu același nume — care constituie partea principală a <button class="term" data-term="stema">stemei</button> țării — și alte câteva <button class="term" data-term="monument">monumente</button> importante: Marea Sală a Poporului, Monumentul <button class="term" data-term="erou">Eroilor</button> Poporului, <button class="term" data-term="mausoleu">Mausoleul</button> <button class="term" data-term="presedinte">Președintelui</button> Mao și Muzeul de Istorie a Chinei.</span></p>
+            <p><span class="key-sentence" data-sentence="s4">La 1 octombrie 1949, Mao Zedong a proclamat solemn de pe <button class="term" data-term="terasa">terasa</button> Porții Tian’anmen <button class="term" data-term="instaurare">instaurarea</button> Republicii Populare Chineze.</span> <span class="key-sentence" data-sentence="s13">Din acel moment, poporul chinez își lua <button class="term" data-term="destin">destinul</button> în propriile mâini.</span> <span class="key-sentence" data-sentence="s5">Astăzi, în fiecare dimineață, în piață are loc <button class="term" data-term="ceremonie">ceremonia</button> de <button class="term" data-term="inaltare">înălțare</button> a drapelului de stat, la care asistă numeroși <button class="term" data-term="cetatean">cetățeni</button>.</span></p>
+            <p>Palatul <button class="term" data-term="imperial">imperial</button>, vechea <button class="term" data-term="cetate">Cetate</button> <button class="term" data-term="interzice">Interzisă</button>, este înconjurat de un canal adânc și de un zid înalt. <span class="key-sentence" data-sentence="s6">În sălile deschise <button class="term" data-term="vizitator">vizitatorilor</button> sunt expuse <button class="term" data-term="bogatie">bogății</button> <button class="term" data-term="pretios">prețioase</button> ce au aparținut <button class="term" data-term="curte">curții</button> imperiale: vaze de <button class="term" data-term="portelan">porțelan</button>, picturi tradiționale, <button class="term" data-term="mobilier">mobilier</button> și alte <button class="term" data-term="colectie">colecții</button> rare <button class="term expression" data-term="pastra">păstrate</button> în acest muzeu deosebit.</span></p>
+            <p><span class="key-sentence" data-sentence="s7">Templul <button class="term" data-term="cer">Cerului</button> este un alt loc de <button class="term" data-term="atractie">atracție</button> pentru turiști. În timpul dinastiilor Ming și Qing împărații mergeau de două ori pe an acolo, <button class="term expression" data-term="depune">depuneau</button> <button class="term" data-term="ofranda">ofrande</button> și <button class="term expression" data-term="omagia">omagiau</button> cerul pentru a obține recolte bogate.</span></p>
+            <p>Parcul Beihai era la început o grădină imperială. Turiștii pot vedea acolo lacul cu același nume, <button class="term" data-term="insula">insula</button> Qionghua dominată de <button class="term" data-term="pagoda">pagoda</button> albă, un ansamblu de pavilioane, chiar și un palat.</p>
+            <p>Parcul Jingshan („Colina Frumoaselor <button class="term" data-term="peisaj">Peisaje</button>”) se află în spatele Cetății Interzise. În vârful <button class="term" data-term="colina">colinei</button> se găsește <button class="term" data-term="chiosc">Chioșcul</button> Primăverii <button class="term" data-term="etern">Eterne</button>. <span class="key-sentence" data-sentence="s8">De acolo se poate admira <button class="term" data-term="panorama">panorama</button> întregului oraș.</span></p>
+            <p>Parcul Sun Zhongshan (Sun Yat-sen) era un loc în care împăratul oferea <button class="term" data-term="sacrificiu">sacrificii</button> Zeului Pământului și Zeului celor Cinci Cereale.</p>
+            <p><span class="key-sentence" data-sentence="s9">Palatul de Vară, o imensă grădină imperială, renumită nu numai în China, este situat în <button class="term" data-term="suburbie">suburbia</button> vestică a Beijingului.</span> El cuprinde Colina <button class="term" data-term="longevitate">Longevității</button>, Lacul Kunming, <button class="term" data-term="galerie">Galeria</button> Lungă Acoperită și multe altele.</p>
+            <p><span class="key-sentence" data-sentence="s10">Colina <button class="term" data-term="parfumat">Parfumată</button>, la peste 20 km vest de Beijing, este frecventată mai ales toamna de cei ce vor să admire <button class="term" data-term="artar">arțarii</button> cu frunze <button class="term" data-term="purpuriu">purpurii</button>.</span></p>
+            <p><button class="term" data-term="zid">Zidul</button> Chinezesc (Marele Zid) este bine cunoscut în toată lumea. La Badaling turiștii pot vedea un <button class="term" data-term="tronson">tronson</button> din <button class="term" data-term="urias">uriașa</button> construcție <button class="term expression" data-term="restaura">restaurată</button> în timpul dinastiei Ming.</p>
+            <p><span class="key-sentence" data-sentence="s11">Pe drumul spre Zidul Chinezesc se află cele 13 <button class="term" data-term="mormant">morminte</button> ale dinastiei Ming, dintre care două sunt deschise vizitatorilor.</span> La mormântul Dingling a fost descoperit și amenajat pentru <button class="term" data-term="vizitare">vizitare</button> și un interesant palat subteran.</p>
+            <p><span class="key-sentence" data-sentence="s12">Se pot vizita, de asemenea, grădina Daguanyuan, <button class="term expression" data-term="descrie">descrisă</button> de Cao Xueqin în celebrul roman clasic „<button class="term" data-term="vis">Visul</button> din pavilionul roșu”, Parcul Lumii, în care a fost reconstruită și o biserică românească, <button class="term" data-term="altar">Altarul</button> Secolului din China — <button class="term" data-term="simbol">simbolul</button> <button class="term" data-term="aspiratie">aspirațiilor</button> poporului chinez pentru noul secol 21 —, vechiul palat de vară, „Grădina <button class="term" data-term="limpezime">Limpezimii</button> <button class="term" data-term="desavarsit">Desăvârșite</button>” (Yuanmingyuan), Templul Pământului și multe alte locuri și monumente de mare importanță și frumusețe.</span></p>
+          </div>
+        </article>
+        <aside class="reading-note">
+          <h3>重点句导航</h3>
+          <p>先读完整段落，再点击句子看结构。词汇按钮优先打开词典卡。</p>
+          <div class="mini-list" id="sentenceNav"></div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="vocab">
+      <div class="section-head"><div><h2>词汇总表</h2><p>完整收录教材 Vocabular。点击卡片查看例句与详细词形。</p></div></div>
+      <div class="card">
+        <div class="vocab-tools"><input id="vocabSearch" class="search" type="search" placeholder="搜索罗马尼亚语、中文或英文…" aria-label="搜索词汇"><select id="posFilter" class="chip" aria-label="按词性筛选"><option value="all">全部词性</option><option value="verb">动词</option><option value="noun">名词</option><option value="adj">形容词</option></select></div>
+        <div class="vocab-grid" id="vocabGrid"></div>
+      </div>
+    </section>
+
+    <section class="section" id="expressions">
+      <div class="section-head"><div><h2>Cuvinte, locuțiuni și expresii</h2><p>六组重点动词：意义、句型、变位和教材例句。</p></div></div>
+      <div class="expression-grid" id="expressionGrid"></div>
+    </section>
+
+    <section class="section" id="grammar">
+      <div class="section-head"><div><h2>语法与句法</h2><p>难点采用中文 + English explanation，对照课文结构理解。</p></div></div>
+      <div class="grammar-grid">
+        <article class="card grammar-card wide">
+          <h3>词形速查 · Flexiunea substantivului și a adjectivului</h3>
+          <div class="bilingual"><div class="lang-note"><strong>中文：</strong>名词需要同时记住性、单复数和定冠词形式；属格/与格常在介词词组或“属于谁”结构中出现。形容词必须与中心名词保持性、数、格一致。</div><div class="lang-note"><strong>English:</strong> Learn a noun together with its gender, plural and definite forms. Adjectives agree with their head nouns in gender, number and case.</div></div>
+          <table><thead><tr><th>类型</th><th>主/宾格 N-A</th><th>属/与格 G-D</th><th>课文例子</th></tr></thead><tbody><tr><td>阴性名词</td><td>cetate → cetatea / cetăți → cetățile</td><td>cetății / cetăților</td><td>în spatele <i>Cetății</i> Interzise</td></tr><tr><td>阳性名词</td><td>împărat → împăratul / împărați → împărații</td><td>împăratului / împăraților</td><td>33 de <i>împărați</i></td></tr><tr><td>中性名词</td><td>monument → monumentul / monumente → monumentele</td><td>monumentului / monumentelor</td><td>alte câteva <i>monumente</i></td></tr><tr><td>四形容词</td><td colspan="2">prețios / prețioasă / prețioși / prețioase</td><td>bogății <i>prețioase</i></td></tr></tbody></table>
+          <p><b>实用规则：</b><i>de + 基数词</i> 后通常用不带冠词的复数：<i>33 de împărați, 44 de hectare</i>。名词作属格定语时常带定冠词：<i>panorama întregului oraș, simbolul aspirațiilor poporului</i>。</p>
+        </article>
+        <article class="card grammar-card wide">
+          <h3>一、连接式过去时 · Modul conjunctiv, timpul perfect</h3>
+          <div class="bilingual"><div class="lang-note"><strong>中文：</strong>结构是 <b>să + fi + 过去分词</b>，所有人称中的 <i>fi</i> 都不变。反身代词或宾格/与格弱式代词放在 <i>fi</i> 前。</div><div class="lang-note"><strong>English:</strong> Form it with <b>să + fi + past participle</b>. The auxiliary <i>fi</i> is invariable; clitic pronouns appear before it.</div></div>
+          <table><thead><tr><th>类型</th><th>肯定</th><th>否定</th></tr></thead><tbody><tr><td>a cânta</td><td>să fi cântat（所有人称相同）</td><td>să nu fi cântat</td></tr><tr><td>a se duce</td><td>să mă/te/se/ne/vă/se fi dus</td><td>să nu mă/te/se/ne/vă/se fi dus</td></tr><tr><td>被动 a fi lăudat</td><td>să fi fost lăudat(ă) / lăudați / lăudate</td><td>să nu fi fost lăudat(ă)…</td></tr></tbody></table>
+          <p><b>副词位置：</b><i>mai, și, prea, cam, tot</i> 一般放在 <i>să</i> 与 <i>fi</i> 之间：<i>Să mai fi așteptat câteva minute… / Să și fi plouat…</i></p>
+          <div class="bilingual"><div class="lang-note"><strong>主要用法：</strong>① 对过去动作表示怀疑、责备、愿望或推测；② 在省略 <i>dacă</i> 的条件句中表示未实现的过去条件。</div><div class="lang-note"><strong>Main uses:</strong> (1) doubt, reproach, wish or inference about a past event; (2) an unreal past condition, often equivalent to a <i>dacă</i>-clause.</div></div>
+          <div class="builder"><strong>形式生成器 · Form builder</strong><div class="builder-controls"><select id="builderPerson"><option value="eu">eu</option><option value="tu">tu</option><option value="el">el/ea</option><option value="noi">noi</option><option value="voi">voi</option><option value="ei">ei/ele</option></select><select id="builderVerb"><option value="canta">a cânta</option><option value="duce">a se duce</option><option value="spala">a se spăla</option><option value="invata">a învăța</option><option value="descrie">a descrie</option></select><button id="buildForm">生成</button></div><div class="builder-output" id="builderOutput" aria-live="polite">eu → să fi cântat</div></div>
+        </article>
+
+        <article class="card grammar-card">
+          <h3>二、介词词组 · Locuțiunea prepozițională</h3>
+          <div class="bilingual"><div class="lang-note"><strong>中文：</strong>由两个或以上词构成，整体起介词作用。很多“定冠词式”词组要求后接属格。</div><div class="lang-note"><strong>English:</strong> A fixed multi-word unit functioning as one preposition. Many article-based forms govern the genitive.</div></div>
+          <table><thead><tr><th>结构</th><th>格</th><th>例子</th></tr></thead><tbody><tr><td>împreună cu / în afară de</td><td>宾格</td><td>împreună cu profesorii</td></tr><tr><td>în spatele / în fața / din cauza</td><td>属格</td><td>în spatele bibliotecii</td></tr><tr><td>pe deasupra / în lungul</td><td>属格</td><td>pe deasupra caselor</td></tr></tbody></table>
+          <div class="case-demo"><span class="token">în față<br><small>副词 · adverb</small></span><span class="arrow">→</span><span class="token">în fața clădirii<br><small>介词词组 + G</small></span></div>
+          <p><b>辨析：</b><i>Merge înainte.</i>（向前走）vs. <i>Merge înaintea lui.</i>（走在他前面）。后者有名词/代词补足语，因此是介词词组。</p>
+        </article>
+
+        <article class="card grammar-card">
+          <h3>三、伴随状语 · Complementul circumstanțial sociativ</h3>
+          <div class="bilingual"><div class="lang-note"><strong>中文：</strong>表示“与谁/与什么一起”完成动作或承受结果，可伴随主语、宾语或施事者补语。</div><div class="lang-note"><strong>English:</strong> It identifies the person or thing accompanying a participant in an action or result.</div></div>
+          <p><b>常见引导：</b><i>cu, împreună cu, la un loc cu, cu… cu tot, cu tot cu…</i></p>
+          <table><tbody><tr><td>伴随主语</td><td><i>Profesorul cu studenții săi a participat…</i></td></tr><tr><td>伴随宾语</td><td><i>L-am întâlnit pe Nicolae cu prietena lui.</i></td></tr><tr><td>伴随施事者</td><td><i>Dicționarul a fost făcut de profesori împreună cu cercetători.</i></td></tr></tbody></table>
+          <p><b>一致重点：</b>谓语通常与真正的主语一致：<i>Profesorul … a participat</i>，不是 <i>au participat</i>。</p>
+        </article>
+
+        <article class="card grammar-card wide">
+          <h3>四、伴随状语从句 · Propoziția circumstanțială sociativă</h3>
+          <div class="bilingual"><div class="lang-note"><strong>中文：</strong>当“伴随者/物”由带谓语的从句表达时，使用伴随状语从句，常由 <i>cu cine, cu ce, împreună cu cine</i> 引导。</div><div class="lang-note"><strong>English:</strong> When the companion is expressed by a clause with its own predicate, the sociative complement expands into a sociative subordinate clause.</div></div>
+          <table><thead><tr><th>简单句中的伴随成分</th><th>复合句中的伴随从句</th></tr></thead><tbody><tr><td>Mă plimb <i>cu prietenii mei</i>.</td><td>Mă plimb <i>cu cine-mi place</i>.</td></tr><tr><td>A plecat împreună <i>cu însoțitorii</i>.</td><td>A plecat împreună <i>cu cine a venit</i>.</td></tr><tr><td>L-au prins <i>cu lucrurile furate</i>.</td><td>L-au prins <i>cu ce furase de la alții</i>.</td></tr></tbody></table>
+          <p><b>语序与标点：</b>伴随状语从句一般位于主句之后，通常不与主句用逗号隔开。<br><b>Word order:</b> It normally follows the main clause and is generally not separated by a comma.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="exercises">
+      <div class="section-head"><div><h2>练习与参考答案</h2><p>先独立作答。每题提交后，系统才会显示参考答案；开放题答案为示例，不是唯一答案。</p></div></div>
+      <div id="exerciseList">
+        <details class="exercise card" open data-ex="1"><summary><span class="ex-no">1</span>选择合适的语气和时态完成句子<span class="ex-tag">客观题 · 4空</span></summary><div class="exercise-body">
+          <p class="prompt">Completați spațiile libere cu verbele date, la modul și timpul potrivit.</p>
+          <div class="item inline-sentence"><label>Ștefan cel Mare ___ între anii 1457–1504.</label><input data-answer="a domnit" placeholder="a domni"></div>
+          <div class="item inline-sentence"><label>Acest împărat a început să ___ când era încă un copil.</label><input data-answer="domnească" placeholder="a domni"></div>
+          <div class="item inline-sentence"><label>În aceste articole autorii își ___ pe cei ce le fuseseră dascăli.</label><input data-answer="omagiază" placeholder="a omagia"></div>
+          <div class="item inline-sentence"><label>Vom organiza o manifestare prin care îl ___ pe acest scriitor.</label><input data-answer="vom omagia" placeholder="a omagia"></div>
+          <div class="exercise-actions"><button class="submit-btn">提交并查看答案</button><span class="status" aria-live="polite"></span></div>
+          <div class="answer-panel"><h4>参考答案</h4><p><b>a domnit</b>；<b>domnească</b>；<b>omagiază</b>；<b>vom omagia</b>。</p></div>
+        </div></details>
+
+        <details class="exercise card" data-ex="2"><summary><span class="ex-no">2</span>把括号内动词变为连接式过去时<span class="ex-tag">客观题 · 10空</span></summary><div class="exercise-body">
+          <p class="prompt">Model: Nu-mi amintesc <b>să fi fost</b> (a fi) și el acolo.</p>
+          <div class="item"><label>Era bine ___ (a se duce) și tu cu ei.</label><input data-answer="să te fi dus"></div>
+          <div class="item"><label>___ (a învăța) mai bine, ar fi obținut rezultate mai bune.</label><input data-answer="să fi învățat"></div>
+          <div class="item"><label>Nimeni nu crede ___ (a spune) ei așa ceva.</label><input data-answer="să fi spus"></div>
+          <div class="item"><label>Atunci ___ (a se întâlni) ei acolo?</label><input data-answer="să se fi întâlnit"></div>
+          <div class="item"><label>Spera ___ (a fi auzit) strigătele ei.</label><input data-answer="să fi auzit"></div>
+          <div class="item"><label>___ (a se scula) dis-de-dimineață, prindea cu siguranță trenul.</label><input data-answer="să se fi sculat"></div>
+          <div class="item"><label>Era imposibil ___ (a ajunge) ei acolo înaintea noastră.</label><input data-answer="să fi ajuns"></div>
+          <div class="item"><label>___ (a bea) vinul și ___ (a sparge) sticla?</label><input data-answer="să fi băut; să fi spart|să fi băut și să fi spart" placeholder="两空用分号隔开"></div>
+          <div class="item"><label>___ (a lua) mașina și ___ (a pleca)?</label><input data-answer="să fi luat; să fi plecat|să fi luat și să fi plecat" placeholder="两空用分号隔开"></div>
+          <div class="item"><label>___ (a aștepta) mai mult de un sfert de oră sau ___ (a pleca)?</label><input data-answer="să fi așteptat; să fi plecat|să fi așteptat sau să fi plecat" placeholder="两空用分号隔开"></div>
+          <div class="exercise-actions"><button class="submit-btn">提交并查看答案</button><span class="status"></span></div>
+          <div class="answer-panel"><h4>参考答案</h4><ol><li>să te fi dus</li><li>să fi învățat</li><li>să fi spus</li><li>să se fi întâlnit</li><li>să fi auzit</li><li>să se fi sculat</li><li>să fi ajuns</li><li>să fi băut … să fi spart</li><li>să fi luat … să fi plecat</li><li>să fi așteptat … să fi plecat</li></ol></div>
+        </div></details>
+
+        <details class="exercise card" data-ex="3"><summary><span class="ex-no">3</span>把替换结构翻译成中文<span class="ex-tag">翻译题</span></summary><div class="exercise-body">
+          <p class="prompt"><b>(1)</b> Trebuia să te fi dus și tu acolo! 替换：<i>să nu fi adus nimic / s-o fi oprit la poartă / să-i fi dat un telefon de ziua lui / să-i fi invitat și pe ei / să le fi mulțumit imediat</i></p><div class="item"><textarea placeholder="写出中文译文…"></textarea></div>
+          <p class="prompt"><b>(2)</b> Să fi fost eu acolo, l-aș fi ajutat imediat. 替换主句：<i>aș fi întrebat-o de asta / i-aș fi dat afară din casă / aș fi anunțat imediat poliția / aș fi chemat o salvare</i></p><div class="item"><textarea placeholder="写出中文译文…"></textarea></div>
+          <p class="prompt"><b>(3)</b> — Cu cine ai realiza acest proiect? — L-aș realiza cu oricine dorește protecția mediului înconjurător. 使用：<i>a face expediția / vrea să cunoască zona aceea / a colabora în cercetarea acestei teme / este pregătit și interesat în domeniu</i></p><div class="item"><textarea placeholder="写出改写后的罗马尼亚语对话和中文译文…"></textarea></div>
+          <div class="exercise-actions"><button class="submit-btn">提交并查看答案</button><span class="status"></span></div>
+          <div class="answer-panel"><h4>参考答案（节选）</h4><p><b>(1)</b> 你当时也应该去那里！／你本来不该带任何东西来。／他（她）当时应该在门口停下。／你本应在他生日那天给他打电话。／你本应也邀请他们。／你本应立即向他们道谢。</p><p><b>(2)</b> 要是我当时在那里，我会立即帮助他／就这件事问她／把他们赶出家门／立即报警／叫一辆救护车。</p><p><b>(3)</b> — <i>Cu cine ai face expediția?</i> — <i>Aș face-o cu oricine vrea să cunoască zona aceea.</i>（你会和谁一起去考察？我会和任何想了解那个地区的人一起去。）<br>— <i>Cu cine ai colabora în cercetarea acestei teme?</i> — <i>Aș colabora cu oricine este pregătit și interesat în domeniu.</i>（你会和谁合作研究这个课题？我会和任何在该领域有准备且有兴趣的人合作。）</p></div>
+        </div></details>
+
+        <details class="exercise card" data-ex="4"><summary><span class="ex-no">4</span>造五个带伴随状语的句子<span class="ex-tag">开放题</span></summary><div class="exercise-body"><div class="item"><textarea placeholder="Construiți cinci propoziții…"></textarea></div><div class="exercise-actions"><button class="submit-btn">提交并查看答案</button><span class="status"></span></div><div class="answer-panel"><h4>示例答案</h4><ol><li>Am vizitat muzeul împreună cu profesorul nostru.</li><li>Maria a venit la bibliotecă cu sora ei.</li><li>Profesorul cu studenții săi a participat la simpozion.</li><li>L-am întâlnit pe Andrei cu colegii lui.</li><li>Dicționarul a fost redactat de profesori împreună cu cercetători.</li></ol></div></div></details>
+
+        <details class="exercise card" data-ex="5"><summary><span class="ex-no">5</span>造两个带伴随状语从句的复合句<span class="ex-tag">开放题</span></summary><div class="exercise-body"><div class="item"><textarea placeholder="Construiți două fraze…"></textarea></div><div class="exercise-actions"><button class="submit-btn">提交并查看答案</button><span class="status"></span></div><div class="answer-panel"><h4>示例答案</h4><p>Voi merge la expoziție împreună cu cine dorește să afle mai multe despre Beijing.<br>Lucrez la acest proiect cu cine este pregătit să colaboreze.</p></div></div></details>
+
+        <details class="exercise card" data-ex="6"><summary><span class="ex-no">6</span>判断由 să 引导的从句类型<span class="ex-tag">客观题 · 7项</span></summary><div class="exercise-body">
+          <div class="item"><label>1. Marea lui dorință era să urce pe Bucegi până la vârful Omul.</label><select data-answer="predicativă"><option value="">请选择</option><option>predicativă</option><option>subiectivă</option><option>finală</option><option>atributivă</option><option>completivă indirectă</option><option>completivă directă</option></select></div>
+          <div class="item"><label>2. Părea să fi înțeles ceea ce i-ai spus.</label><select data-answer="subiectivă"><option value="">请选择</option><option>predicativă</option><option>subiectivă</option><option>finală</option><option>atributivă</option><option>completivă indirectă</option><option>completivă directă</option></select></div>
+          <div class="item"><label>3. Venise la oraș să cumpere un televizor.</label><select data-answer="finală"><option value="">请选择</option><option>predicativă</option><option>subiectivă</option><option>finală</option><option>atributivă</option><option>completivă indirectă</option><option>completivă directă</option></select></div>
+          <div class="item"><label>4. Mâine trebuie să mă scol dis-de-dimineață.</label><select data-answer="subiectivă"><option value="">请选择</option><option>predicativă</option><option>subiectivă</option><option>finală</option><option>atributivă</option><option>completivă indirectă</option><option>completivă directă</option></select></div>
+          <div class="item"><label>5. Hotărârea să locuiască la țară îi era neschimbată.</label><select data-answer="atributivă"><option value="">请选择</option><option>predicativă</option><option>subiectivă</option><option>finală</option><option>atributivă</option><option>completivă indirectă</option><option>completivă directă</option></select></div>
+          <div class="item"><label>6. Mă gândisem să plec mâine după-amiază la Iași.</label><select data-answer="completivă indirectă"><option value="">请选择</option><option>predicativă</option><option>subiectivă</option><option>finală</option><option>atributivă</option><option>completivă indirectă</option><option>completivă directă</option></select></div>
+          <div class="item"><label>7. L-am rugat să nu mai facă zgomot.</label><select data-answer="completivă directă"><option value="">请选择</option><option>predicativă</option><option>subiectivă</option><option>finală</option><option>atributivă</option><option>completivă indirectă</option><option>completivă directă</option></select></div>
+          <div class="exercise-actions"><button class="submit-btn">提交并查看答案</button><span class="status"></span></div><div class="answer-panel"><h4>参考答案</h4><ol><li>predicativă（表语从句）</li><li>subiectivă（主语从句）</li><li>circumstanțială de scop / finală（目的状语从句）</li><li>subiectivă（主语从句）</li><li>atributivă（定语从句）</li><li>completivă indirectă（间接补语从句）</li><li>completivă directă（直接补语从句）</li></ol></div>
+        </div></details>
+
+        <details class="exercise card" data-ex="7"><summary><span class="ex-no">7</span>选择合适的介词词组<span class="ex-tag">客观题 · 8空</span></summary><div class="exercise-body" id="ex7">
+          <p class="prompt">选项：din cauza · în dreptul · din pricina · de la marginea · în jurul · în urma · de deasupra · din jurul</p>
+          <div class="item"><label>Pionierii stau ___ focului de tabără și cântă.</label><select data-answer="în jurul"><option value="">请选择</option><option>din cauza</option><option>în dreptul</option><option>din pricina</option><option>de la marginea</option><option>în jurul</option><option>în urma</option><option>de deasupra</option><option>din jurul</option></select></div>
+          <div class="item"><label>Bătrâna locuiește singură, în căsuța ___ satului.</label><select data-answer="de la marginea"><option value="">请选择</option><option>din cauza</option><option>în dreptul</option><option>din pricina</option><option>de la marginea</option><option>în jurul</option><option>în urma</option><option>de deasupra</option><option>din jurul</option></select></div>
+          <div class="item"><label>Copacii ___ institutului au fost plantați de noi.</label><select data-answer="din jurul"><option value="">请选择</option><option>din cauza</option><option>în dreptul</option><option>din pricina</option><option>de la marginea</option><option>în jurul</option><option>în urma</option><option>de deasupra</option><option>din jurul</option></select></div>
+          <div class="item"><label>În camera ___ bibliotecii locuiește un student.</label><select data-answer="de deasupra"><option value="">请选择</option><option>din cauza</option><option>în dreptul</option><option>din pricina</option><option>de la marginea</option><option>în jurul</option><option>în urma</option><option>de deasupra</option><option>din jurul</option></select></div>
+          <div class="item"><label>___ secetei, pământul a crăpat.</label><select data-answer="din pricina"><option value="">请选择</option><option>din cauza</option><option>în dreptul</option><option>din pricina</option><option>de la marginea</option><option>în jurul</option><option>în urma</option><option>de deasupra</option><option>din jurul</option></select></div>
+          <div class="item"><label>Multe familii au rămas fără adăpost ___ inundațiilor.</label><select data-answer="în urma"><option value="">请选择</option><option>din cauza</option><option>în dreptul</option><option>din pricina</option><option>de la marginea</option><option>în jurul</option><option>în urma</option><option>de deasupra</option><option>din jurul</option></select></div>
+          <div class="item"><label>Când au ajuns ___ cinematografului, s-au despărțit.</label><select data-answer="în dreptul"><option value="">请选择</option><option>din cauza</option><option>în dreptul</option><option>din pricina</option><option>de la marginea</option><option>în jurul</option><option>în urma</option><option>de deasupra</option><option>din jurul</option></select></div>
+          <div class="item"><label>___ furtunii, decolarea avionului a fost amânată cu o oră.</label><select data-answer="din cauza"><option value="">请选择</option><option>din cauza</option><option>în dreptul</option><option>din pricina</option><option>de la marginea</option><option>în jurul</option><option>în urma</option><option>de deasupra</option><option>din jurul</option></select></div>
+          <div class="exercise-actions"><button class="submit-btn">提交并查看答案</button><span class="status"></span></div><div class="answer-panel"><h4>参考答案</h4><p>în jurul · de la marginea · din jurul · de deasupra · din pricina · în urma · în dreptul · din cauza</p></div>
+        </div></details>
+
+        <details class="exercise card" data-ex="8"><summary><span class="ex-no">8</span>使用指定介词词组造句<span class="ex-tag">开放题 · 10项</span></summary><div class="exercise-body"><p class="prompt">înainte de, în fața, în timpul, în jurul, din jurul, în spatele, în dreapta, în stânga, din cauza, în dreptul</p><div class="item"><textarea placeholder="每个词组写一个句子…"></textarea></div><div class="exercise-actions"><button class="submit-btn">提交并查看答案</button><span class="status"></span></div><div class="answer-panel"><h4>示例答案</h4><ol><li>Am ajuns înainte de ora opt.</li><li>Ne întâlnim în fața bibliotecii.</li><li>Nu vorbim în timpul examenului.</li><li>Copiii aleargă în jurul lacului.</li><li>Clădirile din jurul pieței sunt vechi.</li><li>Căminul se află în spatele facultății.</li><li>În dreapta muzeului este un parc.</li><li>În stânga porții se află o stație.</li><li>Excursia a fost amânată din cauza ploii.</li><li>Autobuzul s-a oprit în dreptul teatrului.</li></ol></div></div></details>
+
+        <details class="exercise card" data-ex="9"><summary><span class="ex-no">9</span>把短语译成罗马尼亚语<span class="ex-tag">客观题 · 9项</span></summary><div class="exercise-body" id="ex9"></div></details>
+
+        <details class="exercise card" data-ex="10"><summary><span class="ex-no">10</span>根据课文回答问题<span class="ex-tag">阅读理解 · 14问</span></summary><div class="exercise-body"><p class="prompt">回答教材关于朝代、天安门、故宫、天坛、北海、景山、颐和园、香山等问题。</p><div class="item"><textarea style="min-height:220px" placeholder="用完整的罗马尼亚语句子作答…"></textarea></div><div class="exercise-actions"><button class="submit-btn">提交并查看答案</button><span class="status"></span></div><div class="answer-panel"><h4>参考答案要点</h4><ol><li>Beijingul a fost capitala dinastiilor Jin (1115–1234), Yuan (1271–1368), Ming (1368–1644) și Qing (1644–1911).</li><li>În acest oraș au domnit 33 de împărați și se găsesc peste 200 de obiective cultural-istorice și turistice.</li><li>Piața Tian’anmen are 44 de hectare.</li><li>Acolo se află Poarta Tian’anmen, Marea Sală a Poporului, Monumentul Eroilor Poporului, Mausoleul Președintelui Mao și Muzeul de Istorie a Chinei.</li><li>Mao Zedong a proclamat Republica Populară Chineză la 1 octombrie 1949.</li><li>Răspuns personal: <i>Eu am asistat / Nu am asistat niciodată…</i></li><li>În Palatul Imperial se văd vaze de porțelan, picturi tradiționale, mobilier și alte colecții rare.</li><li>Textul nu precizează poziția Templului Cerului; acesta este în partea de sud a Beijingului.</li><li>Era locul unde împărații depuneau ofrande și omagiau cerul pentru recolte bogate.</li><li>Beihai a fost o grădină imperială cu lac, insulă, pagodă, pavilioane și palat.</li><li>Punctul panoramic indicat de text este vârful Colinei Jingshan, unde se află Chioșcul Primăverii Eterne.</li><li>La Palatul de Vară se vizitează Colina Longevității, Lacul Kunming și Galeria Lungă Acoperită.</li><li>Colina Parfumată este frecventată mai ales toamna, pentru arțarii cu frunze purpurii.</li><li>Se mai pot recomanda Marele Zid, mormintele Ming, Daguanyuan, Parcul Lumii, Yuanmingyuan și Templul Pământului.</li></ol></div></div></details>
+
+        <details class="exercise card" data-ex="11"><summary><span class="ex-no">11</span>使用四个表达造句<span class="ex-tag">开放题</span></summary><div class="exercise-body"><p class="prompt">cu același nume · a fi înconjurat de… · a admira panorama orașului · a fi de o mare frumusețe</p><div class="item"><textarea placeholder="写四个句子…"></textarea></div><div class="exercise-actions"><button class="submit-btn">提交并查看答案</button><span class="status"></span></div><div class="answer-panel"><h4>示例答案</h4><ol><li>Lacul se află lângă satul cu același nume.</li><li>Palatul este înconjurat de un zid înalt.</li><li>De pe colină putem admira panorama orașului.</li><li>Grădina imperială este de o mare frumusețe.</li></ol></div></div></details>
+
+        <details class="exercise card" data-ex="12"><summary><span class="ex-no">12</span>用罗马尼亚语说明四个话题<span class="ex-tag">口语题</span></summary><div class="exercise-body"><p class="prompt">北京的过去与现在；升旗仪式；外国语大学附近景点；如何去世界公园。</p><div class="item"><textarea style="min-height:170px" placeholder="用罗马尼亚语组织四段回答…"></textarea></div><div class="exercise-actions"><button class="submit-btn">提交并查看答案</button><span class="status"></span></div><div class="answer-panel"><h4>示例答案</h4><p><b>1.</b> Beijingul are o istorie îndelungată și a fost capitala mai multor dinastii. Astăzi este centrul politic, cultural și științific al Chinei.<br><b>2.</b> Ceremonia are loc în fiecare dimineață în Piața Tian’anmen. Drapelul de stat este înălțat în prezența multor cetățeni.<br><b>3.</b> În apropierea Universității de Limbi Străine se pot vizita, de exemplu, parcuri și muzee; răspunsul se adaptează locului real al studentului.<br><b>4.</b> Se poate ajunge la Parcul Lumii cu transportul public; traseul exact depinde de punctul de plecare.</p></div></div></details>
+
+        <details class="exercise card" data-ex="13"><summary><span class="ex-no">13</span>介绍北京<span class="ex-tag">口语题</span></summary><div class="exercise-body"><div class="item"><textarea placeholder="Vorbiți despre Beijing…"></textarea></div><div class="exercise-actions"><button class="submit-btn">提交并查看答案</button><span class="status"></span></div><div class="answer-panel"><h4>口语参考框架</h4><p><b>身份：</b>Beijingul este capitala… → <b>历史：</b>A fost capitala dinastiilor… → <b>核心景点：</b>Piața Tian’anmen, Palatul Imperial… → <b>自然与郊区：</b>Palatul de Vară, Colina Parfumată… → <b>评价：</b>Este un oraș de o mare importanță și frumusețe.</p></div></div></details>
+
+        <details class="exercise card" data-ex="14"><summary><span class="ex-no">14</span>描写最近参观的文化历史景点<span class="ex-tag">写作题</span></summary><div class="exercise-body"><div class="item"><textarea style="min-height:170px" placeholder="Descrieți în scris un monument…"></textarea></div><div class="exercise-actions"><button class="submit-btn">提交并查看答案</button><span class="status"></span></div><div class="answer-panel"><h4>示例短文</h4><p><i>Recent am vizitat Palatul Imperial din Beijing. Este un vast ansamblu cultural-istoric, înconjurat de ziduri înalte. În sălile sale sunt expuse obiecte prețioase care au aparținut curții imperiale. M-au impresionat arhitectura, culorile și ordinea curților interioare. Deși erau mulți vizitatori, am putut observa cu atenție porțile, pavilioanele și colecțiile. Consider că Palatul Imperial este un monument de o mare frumusețe și un loc esențial pentru înțelegerea istoriei Chinei.</i></p></div></div></details>
+
+        <details class="exercise card" data-ex="15"><summary><span class="ex-no">15</span>把12个中文句子译成罗马尼亚语<span class="ex-tag">翻译题</span></summary><div class="exercise-body" id="ex15"></div></details>
+      </div>
+    </section>
+
+    <section class="section card supplement" id="romania-context">
+      <div class="section-head"><div><h2>Date despre România · 罗马尼亚资料</h2><p>教材文化背景：布加勒斯特的历史起源。</p></div></div>
+      <details><summary>展开教材背景资料</summary><div style="margin-top:16px"><p>许多历史遗存表明，今天布加勒斯特所在的地方早在旧石器后期、新石器和铜器时代就有人居住。考古学家们曾在 Herăstrău 和 Dealul Piscului 等地发现葛特—达契亚人时期的珍宝饰物。罗马帝国军队占领达契亚后，当地的自由民与帝国行省之间有着许多经济往来和精神联系。3至13世纪，尽管受到异族迁徙的影响，这一地区仍有人居住。大约在14世纪，Bucur 的后裔们居住的村落之一成为集镇，开始了布加勒斯特城的历史。迄今发现的最早文字记载年代是1459年（弗拉德·采佩什执政时期）。布加勒斯特因成为大公国的都城，手工业和商业得到迅速发展。到了16世纪，它已成为罗马尼亚公国最大的城市。1862年以后，布加勒斯特一直是罗马尼亚的首都。</p></div></details>
+    </section>
+
+    <section class="section card supplement" id="reading">
+      <div class="section-head"><div><h2>Lectură suplimentară · BUCUREȘTI</h2><p>教材拓展阅读与谚语，可折叠查看。</p></div></div>
+      <details><summary>展开布加勒斯特拓展课文</summary><div class="supplement-text">
+        <p>Atestat documentar în 1459, pe malurile Dâmboviței, în vremea domnitorului Vlad Țepeș, Bucureștiul a devenit ulterior reședința Curții Domnești. Tradiția leagă înființarea Bucureștiului de numele lui Bucur, pe care l-ar fi purtat, conform diferitelor legende, fie un vlăstar domnesc, fie un haiduc, fie un pescar, fie un păstor. Un fapt este cert: numele Bucur este de origine traco-geto-dacă. Numele de București evocă și cuvântul „bucurie”, iar orașul a cunoscut, ca mai toate metropolele europene, decenii de bucurie, de măreție, dar și de durere.</p>
+        <p>Bucureștiul este un oraș-grădină, verde și plăcut, cu o arhitectură variată. Punctul de reper cel mai convingător este probabil Parcul Cișmigiu. În acest parc, conceput către 1860, cu peluze și statui, domnește o atmosferă plăcută și desuetă. Cișmigiul este locul de plimbare favorit al bucureștenilor în zilele de vară. Este situat în apropierea marilor bulevarde, a Dâmboviței și a uriașului centru civic.</p>
+        <p>Bulevardele Bucureștiului sunt orientate nord-sud și est-vest, dar nu urmează un traseu grilă. Calea Victoriei reprezintă coloana vertebrală a orașului. Calea Victoriei! Victoria neamului, dar și izbânda ei. Ea este osia în jurul căreia se învârte „roata cetății”… Pe toată lungimea acestei artere există construcții deosebit de interesante.</p>
+        <p>Muzeele din București adăpostesc multe „comori”. Muzeul Satului — în aer liber — este situat în Parcul Herăstrău, lângă Arcul de Triumf. Pe o suprafață de 15 ha, lângă lac, se află nu mai puțin de 298 exemplare autentice de arhitectură țărănească din toate colțurile României. Între cele mai frecventate muzee mai sunt: Muzeul Național de Artă, Muzeul Țăranului Român, Muzeul Antipa (de istorie naturală), Muzeul Național de Istorie, apoi Muzeul Colecțiilor de Artă, Muzeul Muzicii, Muzeul Național Cotroceni, Muzeul Pompierilor (Foișorul de Foc), Vila Minovici (cu două muzee: de artă populară și artă medievală) și bineînțeles Muzeul Orașului București din Piața Universității.</p>
+        <p>Numele de „Micul Paris” dat Bucureștiului este justificat de vibranta viață artistică a orașului oferită de operă sau operetă, de teatrele Național, Bulandra, Nottara și de Filarmonica „George Enescu”.</p>
+        <p>Bucureștiul este înconjurat de lacuri și de păduri lângă care se află vechi palate și mănăstiri. Mănăstirea cu turn de la Snagov (1404), amplasată pe o insulă a lacului Snagov, este un loc preferat deseori de bucureșteni. Se poate vizita, de asemenea, la doar 14 km de oraș, elegantul palat Mogoșoaia din secolul al XVIII-lea, locuința domnitorului Constantin Brâncoveanu, cel care a dat numele său adaptării românești a arhitecturii baroce și renascentiste, sau lacurile și pădurile de la Pasărea și Cernica, tot „la doi pași” de centrul acestui oraș plin de contraste.</p>
+      </div></details>
+      <div class="proverbs"><div class="proverb">Mai credincioși ochii decât urechile.<small>眼见为实 · Seeing is believing.</small></div><div class="proverb">Aurul și în gunoi, tot aur rămâne.<small>真金不怕埋没 · Gold remains gold.</small></div><div class="proverb">Cel ce privește la joc mai bine judecă decât cel în joc.<small>旁观者清 · An observer judges more clearly.</small></div></div>
+    </section>
+    <p class="footer">Lecția 16 · 离线互动学习课件 · 所有内容均可在本地浏览器中使用</p>
+  </main>
+
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+  <aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="drawerTitle">
+    <button class="drawer-close" id="drawerClose" aria-label="关闭">×</button>
+    <div id="drawerContent"></div>
+  </aside>
+
+  <script>
+    const V = (lemma, pos, zh, en, forms, examples = [], extra = "") => ({lemma,pos,zh,en,forms,examples,extra});
+    const vocab = {
+      nod: V("nod", "s.n.", "（线、交通等的）结；枢纽", "node; hub", "nod · noduri · nodul/nodurile · G-D: nodului/nodurilor", [["un important nod de comunicații", "一个重要的交通枢纽", "an important transport hub"]]),
+      comunicatie: V("comunicație", "s.f.", "通讯；交通", "communication; transport link", "comunicație · comunicații · comunicația/comunicațiile · G-D: comunicației/comunicațiilor"),
+      dinastie: V("dinastie", "s.f.", "朝代；王朝", "dynasty", "dinastie · dinastii · dinastia/dinastiile · G-D: dinastiei/dinastiilor"),
+      imparat: V("împărat", "s.m.", "皇帝；帝王", "emperor", "împărat · împărați · împăratul/împărații · G-D: împăratului/împăraților"),
+      domni: V("a domni", "v.i.", "统治；称帝", "to reign; to rule", "现在时：domnesc, domnești, domnește, domnim, domniți, domnesc；过去分词：domnit", [["33 de împărați au domnit în acest oraș.", "33位皇帝曾在这座城市执政。", "Thirty-three emperors reigned in this city."]], "verb"),
+      gasi: V("a găsi", "v.t./v.r.", "找到；发现；位于/存在", "to find; to consider; to be located", "现在时：găsesc, găsești, găsește, găsim, găsiți, găsesc；过去分词：găsit", [["Aici se găsesc peste 200 de obiective.", "这里有200多处景点。", "More than 200 sights are found here."], ["Găsesc că n-ai procedat corect.", "我认为你做得不对。", "I find that you did not act correctly."]], "verb"),
+      obiectiv: V("obiectiv", "s.n.", "目标；项目；（旅游）景点", "objective; site; attraction", "obiectiv · obiective · obiectivul/obiectivele · G-D: obiectivului/obiectivelor"),
+      turistic: V("turistic", "adj.", "旅游的", "tourist; tourism-related", "m.sg. turistic · f.sg. turistică · m.pl. turistici · f.pl. turistice"),
+      hectar: V("hectar", "s.n.", "公顷", "hectare", "hectar · hectare · hectarul/hectarele · G-D: hectarului/hectarelor"),
+      stema: V("stemă", "s.f.", "徽；徽章", "coat of arms; emblem", "stemă · steme · stema/stemele · G-D: stemei/stemelor"),
+      monument: V("monument", "s.n.", "纪念碑；文物；古迹", "monument; historic site", "monument · monumente · monumentul/monumentele · G-D: monumentului/monumentelor"),
+      erou: V("erou", "s.m.", "英雄", "hero", "erou · eroi · eroul/eroii · G-D: eroului/eroilor"),
+      mausoleu: V("mausoleu", "s.n.", "纪念堂；陵墓", "mausoleum", "mausoleu · mausolee · mausoleul/mausoleele · G-D: mausoleului/mausoleelor"),
+      presedinte: V("președinte", "s.m.", "主席；总统；委员长；议长", "president; chairperson", "președinte · președinți · președintele/președinții · G-D: președintelui/președinților"),
+      terasa: V("terasă", "s.f.", "平台；（餐馆等的）露天座", "terrace; platform", "terasă · terase · terasa/terasele · G-D: terasei/teraselor"),
+      instaurare: V("instaurare", "s.f.", "创立；建立", "establishment; institution", "instaurare · instaurări · instaurarea/instaurările · G-D: instaurării/instaurărilor"),
+      destin: V("destin", "s.n.", "命运", "destiny; fate", "destin · destine · destinul/destinele · G-D: destinului/destinelor"),
+      ceremonie: V("ceremonie", "s.f.", "典礼；礼仪", "ceremony", "ceremonie · ceremonii · ceremonia/ceremoniile · G-D: ceremoniei/ceremoniilor"),
+      inaltare: V("înălțare", "s.f.", "升起", "raising; elevation", "înălțare · înălțări · înălțarea/înălțările · G-D: înălțării/înălțărilor"),
+      cetatean: V("cetățean", "s.m./s.f.", "公民", "citizen", "m.: cetățean/cetățeni; f.: cetățeană/cetățene; 定冠词 cetățeanul/cetățenii, cetățeana/cetățenele"),
+      imperial: V("imperial", "adj.", "皇帝的；帝王的", "imperial", "m.sg. imperial · f.sg. imperială · m.pl. imperiali · f.pl. imperiale"),
+      cetate: V("cetate", "s.f.", "城堡；城", "fortress; citadel", "cetate · cetăți · cetatea/cetățile · G-D: cetății/cetăților"),
+      interzice: V("a interzice", "v.t.", "禁止", "to forbid; to prohibit", "现在时：interzic, interzici, interzice, interzicem, interziceți, interzic；过去分词：interzis", [["La examen se interzice folosirea calculatorului.", "考试中禁止使用计算器。", "The use of a calculator is forbidden in the exam."]], "verb"),
+      vizitator: V("vizitator", "s.m./s.f.", "参观者；来访者", "visitor", "m.: vizitator/vizitatori; f.: vizitatoare/vizitatoare; G-D pl.: vizitatorilor"),
+      bogatie: V("bogăție", "s.f.", "财富；资源", "wealth; treasure; resource", "bogăție · bogății · bogăția/bogățiile · G-D: bogăției/bogățiilor"),
+      pretios: V("prețios", "adj.", "宝贵的；贵重的", "precious; valuable", "m.sg. prețios · f.sg. prețioasă · m.pl. prețioși · f.pl. prețioase"),
+      curte: V("curte", "s.f.", "院子；宫廷", "courtyard; court", "curte · curți · curtea/curțile · G-D: curții/curților"),
+      portelan: V("porțelan", "s.n.", "瓷；瓷器（总称）", "porcelain", "porțelan · porțelanuri（种类/制品）· porțelanul/porțelanurile"),
+      mobilier: V("mobilier", "s.n.", "家具（总称）", "furniture", "集合名词，通常用单数：mobilierul; 复数 mobiliere 多指不同套装/种类"),
+      colectie: V("colecție", "s.f.", "收集物；藏品", "collection", "colecție · colecții · colecția/colecțiile · G-D: colecției/colecțiilor"),
+      pastra: V("a păstra", "v.t./v.r.", "保存；保留；保持", "to keep; preserve; maintain", "现在时：păstrez, păstrezi, păstrează, păstrăm, păstrați, păstrează；过去分词：păstrat", [["Maria a păstrat toate scrisorile primite.", "玛丽亚保存了收到的所有信件。", "Maria kept all the letters she received."], ["Foile matricole se păstrează la secretariat.", "成绩登记表保存在系办公室。", "Academic records are kept at the faculty office."]], "verb"),
+      cer: V("cer", "s.n.", "天；天空", "sky; heaven", "cer · ceruri · cerul/cerurile · G-D: cerului/cerurilor"),
+      atractie: V("atracție", "s.f.", "吸引力；景点", "attraction", "atracție · atracții · atracția/atracțiile · G-D: atracției/atracțiilor"),
+      depune: V("a depune", "v.t.", "放；放置；提交；投入", "to place; deposit; submit; exert", "现在时：depun, depui, depune, depunem, depuneți, depun；过去分词：depus", [["Delegația a depus o coroană de flori.", "代表团敬献了花圈。", "The delegation laid a wreath."], ["Vom depune toate eforturile.", "我们将竭尽全力。", "We will make every effort."]], "verb"),
+      ofranda: V("ofrandă", "s.f.", "祭品", "offering", "ofrandă · ofrande · ofranda/ofrandele · G-D: ofrandei/ofrandelor"),
+      omagia: V("a omagia", "v.t.", "向……表示敬意；纪念", "to honour; pay tribute to", "现在时：omagiez, omagiezi, omagiază, omagiem, omagiați, omagiază；过去分词：omagiat", [["Împărații omagiau cerul.", "皇帝们祭天。", "The emperors paid homage to Heaven."]], "verb"),
+      insula: V("insulă", "s.f.", "岛；岛屿", "island", "insulă · insule · insula/insulele · G-D: insulei/insulelor"),
+      pagoda: V("pagodă", "s.f.", "塔", "pagoda", "pagodă · pagode · pagoda/pagodele · G-D: pagodei/pagodelor"),
+      peisaj: V("peisaj", "s.n.", "风景", "landscape; scenery", "peisaj · peisaje · peisajul/peisajele · G-D: peisajului/peisajelor"),
+      colina: V("colină", "s.f.", "小山；丘；岗", "hill", "colină · coline · colina/colinele · G-D: colinei/colinelor"),
+      chiosc: V("chioșc", "s.n.", "亭；售货亭", "kiosk; pavilion", "chioșc · chioșcuri · chioșcul/chioșcurile · G-D: chioșcului/chioșcurilor"),
+      etern: V("etern", "adj.", "永恒的；不朽的", "eternal", "m.sg. etern · f.sg. eternă · m.pl. eterni · f.pl. eterne"),
+      panorama: V("panoramă", "s.f.", "全景；鸟瞰", "panorama; panoramic view", "panoramă · panorame · panorama/panoramele · G-D: panoramei/panoramelor"),
+      sacrificiu: V("sacrificiu", "s.n.", "牺牲；祭品", "sacrifice; offering", "sacrificiu · sacrificii · sacrificiul/sacrificiile · G-D: sacrificiului/sacrificiilor"),
+      suburbie: V("suburbie", "s.f.", "郊区", "suburb; outskirts", "suburbie · suburbii · suburbia/suburbiile · G-D: suburbiei/suburbiilor"),
+      longevitate: V("longevitate", "s.f.", "长寿", "longevity", "抽象名词，通常单数：longevitatea; G-D: longevității"),
+      galerie: V("galerie", "s.f.", "长廊；画廊", "gallery; covered corridor", "galerie · galerii · galeria/galeriile · G-D: galeriei/galeriilor"),
+      parfumat: V("parfumat", "adj.", "香的；芬芳的", "fragrant; scented", "m.sg. parfumat · f.sg. parfumată · m.pl. parfumați · f.pl. parfumate"),
+      artar: V("arțar", "s.m.", "槭树；枫树", "maple tree", "arțar · arțari · arțarul/arțarii · G-D: arțarului/arțarilor"),
+      purpuriu: V("purpuriu", "adj.", "紫红色的", "purple; crimson", "m.sg. purpuriu · f.sg. purpurie · m.pl. purpurii · f.pl. purpurii"),
+      zid: V("zid", "s.n.", "围墙；城墙", "wall", "zid · ziduri · zidul/zidurile · G-D: zidului/zidurilor"),
+      tronson: V("tronson", "s.n.", "段；截；部分", "section; segment", "tronson · tronsoane · tronsonul/tronsoanele · G-D: tronsonului/tronsoanelor"),
+      urias: V("uriaș", "adj.", "巨大的；庞大的", "huge; gigantic", "m.sg. uriaș · f.sg. uriașă · m.pl. uriași · f.pl. uriașe"),
+      restaura: V("a restaura", "v.t./v.r.", "修复；修缮", "to restore", "现在时：restaurez, restaurezi, restaurează, restaurăm, restaurați, restaurează；过去分词：restaurat", [["Tablourile vechi nu se restaurează ușor.", "古画不容易修复。", "Old paintings are not easily restored."]], "verb"),
+      mormant: V("mormânt", "s.n.", "坟墓；陵墓", "tomb; grave", "mormânt · morminte · mormântul/mormintele · G-D: mormântului/mormintelor"),
+      vizitare: V("vizitare", "s.f.", "拜访；参观；游览", "visiting; visit", "vizitare · vizitări · vizitarea/vizitările · G-D: vizitării/vizitărilor"),
+      descrie: V("a descrie", "v.t./v.r.", "描写；描绘", "to describe", "现在时：descriu, descrii, descrie, descriem, descrieți, descriu；过去分词：descris", [["Scriitorul și-a descris copilăria.", "作家描写了自己的童年。", "The writer described his childhood."], ["În carte se descriu monumentele.", "书中描写了这些古迹。", "The monuments are described in the book."]], "verb"),
+      vis: V("vis", "s.n.", "梦；梦想", "dream", "vis · vise（梦境/梦想）/visuri（理想）· visul/visele/visurile"),
+      altar: V("altar", "s.n.", "祭坛；圣坛", "altar", "altar · altare · altarul/altarele · G-D: altarului/altarelor"),
+      simbol: V("simbol", "s.n.", "象征", "symbol", "simbol · simboluri · simbolul/simbolurile · G-D: simbolului/simbolurilor"),
+      aspiratie: V("aspirație", "s.f.", "向往；憧憬", "aspiration", "aspirație · aspirații · aspirația/aspirațiile · G-D: aspirației/aspirațiilor"),
+      limpezime: V("limpezime", "s.f.", "清澈；清楚", "clarity; limpidity", "limpezime · limpezimi · limpezimea/limpezimile · G-D: limpezimii/limpezimilor"),
+      desavarsit: V("desăvârșit", "adj.", "完美的", "perfect; complete", "m.sg. desăvârșit · f.sg. desăvârșită · m.pl. desăvârșiți · f.pl. desăvârșite")
+    };
+
+    const expressions = [
+      {key:"gasi", senses:[["a găsi (cuiva) ceva", "给某人找到某物 / to find something for someone", ["Am găsit o pereche de mănuși în sala de curs.","Cineva i-a găsit Elenei actele și banii pe stradă.","I-am găsit o cameră mobilată prin apropiere."]],["a găsi pe cineva", "找到某人 / to find someone", ["La ora aceasta puteți s-o găsiți la serviciu.","L-am căutat peste tot, dar nu l-am găsit."]],["a găsi că…", "认为、发现…… / to find that…", ["Găsesc că n-ai procedat corect."]],["a se găsi（被动）", "被发现、被找到 / to be found", ["S-a găsit soluția problemei.","Nu i s-au găsit încă actele pierdute."]],["a se găsi", "有、位于 / to be located", ["În sală se găsesc două hărți.","La Beijing se găsesc peste 200 de obiective cultural-istorice și turistice."]]]},
+      {key:"interzice", senses:[["a interzice ceva", "禁止某事 / to prohibit something", ["Nicio lege nu interzice lucrul acesta.","Medicul îi interzice mâncărurile sărate și grase."]],["a interzice să…", "禁止做…… / to forbid someone to…", ["Părinții i-au interzis să se mai întâlnească cu băieții aceia."]],["a se interzice", "禁止（无人称/被动）/ to be prohibited", ["La examen se interzice folosirea calculatorului.","În orașul Beijing se interzic petardele.","Li s-a interzis să intre în cămin după ora 24."]]]},
+      {key:"pastra", senses:[["a păstra ceva", "保存、保留、保持 / to keep", ["Maria a păstrat toate scrisorile primite.","Păstrați curățenie în sala de curs!","Am păstrat două bilete pentru tine.","I-ai păstrat fotografiile?"]],["a fi păstrat", "被保存 / to be preserved", ["Manuscrisele sunt păstrate de soția poetului."]],["a se păstra", "得到保留；被保存 / to be kept", ["Lui Alexandru i se va păstra locul.","Foile matricole ale studenților se păstrează la secretariatul facultății."]]]},
+      {key:"depune", senses:[["a depune ceva", "放置、提交 / to lay or submit", ["A depus bagajele pe un cărucior.","Delegația română a depus o coroană de flori la Monumentul Eroilor Poporului."]],["a depune muncă/efort", "付出劳动、努力 / to make an effort", ["Pentru realizarea acestui proiect ei au depus multă muncă.","Vom depune toate eforturile ca să ne însușim limba română."]],["a depune armele", "缴枪、放下武器 / to lay down arms", ["După o scurtă luptă, inamicii au depus armele."]],["a depune bani", "存钱 / to deposit money", ["Merg la bancă să depun niște bani."]]]},
+      {key:"restaura", senses:[["a restaura ceva", "修复某物 / to restore something", ["Este o echipă de specialiști și muncitori care restaurează numai monumentele cultural-istorice.","Primăria Constanța a hotărât să restaureze Cazinoul."]],["a se restaura", "被修复 / to be under restoration", ["Tablourile vechi nu se restaurează ușor.","Din cauză că se restaurează muzeul, nu-l putem vizita."]]]},
+      {key:"descrie", senses:[["a descrie ceva", "描写某物 / to describe something", ["Scriitorul și-a descris copilăria petrecută la țară.","Profesoara le-a cerut elevilor să descrie natura.","Și-a descris familia într-un roman autobiografic."]],["a descrie pe cineva", "描写某人 / to describe someone", ["În compunere Radu l-a descris pe Bogdan.","L-a descris pe fostul lui profesor într-un articol."]],["a se descrie", "（被动反身）被描写 / to be described", ["În carte se descriu principalele monumente istorice din România.","În acest jurnal de călătorie s-au descris și peisajele specifice acelei regiuni."]]]}
+    ];
+
+    const sentences = {
+      s1:{title:"城市身份与并列结构", ro:"Orașul Beijing, capitala R.P. Chineze, este centrul politic, cultural, științific și de învățământ, precum și un important nod de comunicații pentru întreaga țară.", zh:"北京是中华人民共和国的首都，是全国的政治、文化、科学和教育中心，也是全国重要的交通枢纽。", en:"Beijing, the capital of the PRC, is the country’s political, cultural, scientific and educational centre, as well as an important transport hub.", note:"capitala… 是同位语；precum și 表示“以及、也”，补充最后一个并列成分。de învățământ 与前面的形容词共同修饰 centrul。"},
+      s2:{title:"无人称/存在式 se găsesc", ro:"Aici se găsesc peste 200 de obiective cultural-istorice și turistice.", zh:"这里有200多处文化历史景点和旅游景点。", en:"More than 200 cultural, historical and tourist sites can be found here.", note:"se găsesc 在此表示“有、存在、坐落”，主语是复数 obiective，所以谓语用 găsesc。"},
+      s3:{title:"关系从句与属格", ro:"…poarta cu același nume — care constituie partea principală a stemei țării — …", zh:"……同名的城门——它构成国徽的主体部分——……", en:"…the gate of the same name—which forms the main part of the national coat of arms—…", note:"care 指代 poarta，并在从句中作主语。a stemei țării 是连续属格结构：国徽的主体部分。"},
+      s4:{title:"时间、地点与抽象宾语", ro:"La 1 octombrie 1949, Mao Zedong a proclamat solemn de pe terasa Porții Tian’anmen instaurarea Republicii Populare Chineze.", zh:"1949年10月1日，毛泽东在天安门城楼上庄严宣告中华人民共和国成立。", en:"On 1 October 1949, Mao Zedong solemnly proclaimed the establishment of the PRC from the Tian’anmen rostrum.", note:"de pe = 从……上面；instaurarea 是名词化宾语，对应中文“成立”。"},
+      s13:{title:"反身所属与固定表达", ro:"Din acel moment, poporul chinez își lua destinul în propriile mâini.", zh:"从那一刻起，中国人民把命运掌握在自己手中。", en:"From that moment on, the Chinese people took their destiny into their own hands.", note:"a-și lua destinul în propriile mâini = 掌握自己的命运。își 是与格反身弱式代词，表示主语与 destinul 的所属关系。"},
+      s5:{title:"固定表达 are loc + 关系结构", ro:"În fiecare dimineață, în piață are loc ceremonia de înălțare a drapelului de stat, la care asistă numeroși cetățeni.", zh:"每天清晨，广场上都举行升国旗仪式，许多市民前来观看。", en:"Every morning, the flag-raising ceremony takes place in the square and is attended by many citizens.", note:"a avea loc = 举行/发生。a asista la cere la + 宾格，因此关系代词必须是 la care。"},
+      s6:{title:"倒装被动句与关系从句", ro:"În sălile deschise vizitatorilor sunt expuse bogății prețioase ce au aparținut curții imperiale…", zh:"在向参观者开放的大厅中，陈列着曾属于宫廷的珍贵藏品……", en:"Precious objects that once belonged to the imperial court are displayed in halls open to visitors…", note:"地点状语前置，sunt expuse 与复数阴性 bogății 一致。ce = care；a aparține cere dativul：curții imperiale。"},
+      s7:{title:"频率表达与目的结构", ro:"…împărații mergeau de două ori pe an acolo, depuneau ofrande și omagiau cerul pentru a obține recolte bogate.", zh:"皇帝每年两次前往那里，敬献祭品、祭天，以求五谷丰登。", en:"The emperors went there twice a year, made offerings and honoured Heaven in order to obtain rich harvests.", note:"de două ori pe an = 每年两次；pentru a + infinitiv 表示目的。三个未完成过去时描写历史上的惯常行为。"},
+      s8:{title:"se poate + 不定式", ro:"De acolo se poate admira panorama întregului oraș.", zh:"从那里可以鸟瞰整座城市。", en:"From there, one can admire the panorama of the entire city.", note:"se poate + infinitiv 构成无人称表达“可以……”。panorama întregului oraș 中 întregului oraș 为属格。"},
+      s9:{title:"同位语插入与被动结构", ro:"Palatul de Vară, o imensă grădină imperială, renumită nu numai în China, este situat în suburbia vestică a Beijingului.", zh:"颐和园是一座巨大的皇家园林，不仅在中国享有盛名，位于北京西郊。", en:"The Summer Palace, an immense imperial garden renowned beyond China, is situated in Beijing’s western suburbs.", note:"o imensă grădină imperială 是同位语。renumită 与 grădină 阴性单数一致；este situat 则与 Palatul 阳性单数一致。"},
+      s10:{title:"被动语态 + cei ce", ro:"Colina Parfumată… este frecventată mai ales toamna de cei ce vor să admire arțarii cu frunze purpurii.", zh:"香山尤其在秋季吸引想要观赏红叶的人。", en:"Fragrant Hill is visited especially in autumn by those who wish to admire the maples with crimson leaves.", note:"este frecventată de… 是被动语态。cei ce = cei care，“那些……的人”。"},
+      s11:{title:"地点前置与 dintre care", ro:"Pe drumul spre Zidul Chinezesc se află cele 13 morminte ale dinastiei Ming, dintre care două sunt deschise vizitatorilor.", zh:"前往长城的路上有明十三陵，其中两座向游客开放。", en:"On the way to the Great Wall are the thirteen Ming tombs, two of which are open to visitors.", note:"地点状语 Pe drumul… 前置；dintre care două = 其中两个，care 指代 morminte。"},
+      s12:{title:"se pot vizita 与长并列", ro:"Se pot vizita, de asemenea, grădina Daguanyuan… și multe alte locuri…", zh:"此外，还可以参观大观园……以及许多其他重要而美丽的地方和古迹。", en:"One may also visit Daguanyuan Garden… and many other important and beautiful places and monuments.", note:"se pot vizita 是无人称/被动反身结构，动词复数与后面的多个景点协调。阅读长句时先抓主干 Se pot vizita + 景点清单。"}
+    };
+
+    const posType = pos => pos.startsWith("v") ? "verb" : pos.startsWith("adj") ? "adj" : "noun";
+    const esc = s => String(s).replace(/[&<>\"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+    function renderVocab(){
+      const q = document.querySelector("#vocabSearch").value.trim().toLowerCase();
+      const pf = document.querySelector("#posFilter").value;
+      const html = Object.entries(vocab).filter(([,v]) => (pf === "all" || posType(v.pos) === pf) && [v.lemma,v.zh,v.en].join(" ").toLowerCase().includes(q)).map(([key,v]) => `<button class="vocab-card" data-open-term="${key}"><span class="lemma">${v.lemma}</span><span class="pos">${v.pos}</span><div class="meaning">${v.zh}</div><div class="en">${v.en}</div><div class="morph-box">${v.forms.split("；")[0]}</div></button>`).join("");
+      document.querySelector("#vocabGrid").innerHTML = html || `<p style="padding:10px;color:var(--muted)">没有匹配词条。</p>`;
+    }
+    function renderExpressions(){
+      document.querySelector("#expressionGrid").innerHTML = expressions.map(x => { const v=vocab[x.key]; return `<article class="card expression-card"><h3>${v.lemma}</h3><div class="conj">${v.forms}</div>${x.senses.map(s=>`<div class="sense"><strong>${s[0]}</strong><small>${s[1]}</small>${(Array.isArray(s[2])?s[2]:[s[2]]).map(ex=>`<div><i>${ex}</i></div>`).join("")}</div>`).join("")}<button class="action" data-open-term="${x.key}">打开完整词典卡</button></article>`}).join("");
+    }
+    function openDrawer(title, html){
+      document.querySelector("#drawerContent").innerHTML = `<div class="drawer-kicker">Interactive note</div><h2 id="drawerTitle">${title}</h2>${html}`;
+      document.querySelector("#drawer").classList.add("open"); document.querySelector("#drawerBackdrop").classList.add("open"); document.body.style.overflow="hidden"; document.querySelector("#drawerClose").focus();
+    }
+    function openTerm(key){
+      const v=vocab[key]; if(!v) return;
+      const related=expressions.find(x=>x.key===key);
+      const occurrence=document.querySelector(`[data-term="${key}"]`);
+      const context=occurrence ? (occurrence.closest("[data-sentence]") || occurrence.closest("p")).textContent.trim().replace(/\s+/g," ") : "";
+      const examples=(v.examples||[]).map(e=>`<div class="example"><strong>${e[0]}</strong><span>中：${e[1]}</span><span>EN: ${e[2]}</span></div>`).join("");
+      const senses=related ? `<div class="drawer-section"><h3>教材搭配</h3>${related.senses.map(s=>`<div class="example"><strong>${s[0]}</strong><span>${s[1]}</span>${(Array.isArray(s[2])?s[2]:[s[2]]).map(ex=>`<span>• ${ex}</span>`).join("")}</div>`).join("")}</div>` : "";
+      const textExample=context?`<div class="drawer-section"><h3>课文原句 / Text example</h3><div class="example"><strong>${context}</strong></div></div>`:"";
+      openDrawer(v.lemma, `<div class="meaning-big"><b>${v.pos}</b> · ${v.zh}<br><span style="color:var(--muted)">${v.en}</span></div><div class="drawer-section"><h3>词形 / Morphology</h3><p>${v.forms}</p></div>${textExample}${examples?`<div class="drawer-section"><h3>补充例句 / More examples</h3>${examples}</div>`:""}${senses}`);
+    }
+    function openSentence(id){ const s=sentences[id]; if(!s)return; openDrawer(s.title, `<div class="drawer-section"><h3>原句</h3><div class="example"><strong>${s.ro}</strong></div></div><div class="drawer-section"><h3>翻译</h3><p><b>中：</b>${s.zh}</p><p><b>EN:</b> ${s.en}</p></div><div class="drawer-section"><h3>结构讲解</h3><p>${s.note}</p></div>`); }
+    function closeDrawer(){ document.querySelector("#drawer").classList.remove("open"); document.querySelector("#drawerBackdrop").classList.remove("open"); document.body.style.overflow=""; }
+
+    document.addEventListener("click", e=>{
+      const t=e.target.closest("[data-term], [data-open-term]"); if(t){ e.stopPropagation(); openTerm(t.dataset.term || t.dataset.openTerm); return; }
+      const s=e.target.closest("[data-sentence]"); if(s) openSentence(s.dataset.sentence);
+    });
+    document.querySelector("#drawerClose").addEventListener("click",closeDrawer); document.querySelector("#drawerBackdrop").addEventListener("click",closeDrawer); document.addEventListener("keydown",e=>{if(e.key==="Escape")closeDrawer()});
+    document.querySelector("#toggleTerms").addEventListener("click",e=>{document.body.classList.toggle("hide-terms"); e.currentTarget.setAttribute("aria-pressed",String(!document.body.classList.contains("hide-terms")));});
+    document.querySelector("#toggleSentences").addEventListener("click",e=>{document.body.classList.toggle("show-sentences"); e.currentTarget.setAttribute("aria-pressed",String(document.body.classList.contains("show-sentences")));});
+    document.querySelector("#vocabSearch").addEventListener("input",renderVocab); document.querySelector("#posFilter").addEventListener("change",renderVocab);
+    document.querySelector("#sentenceNav").innerHTML=Object.entries(sentences).map(([id,s],i)=>`<button data-sentence="${id}">${i+1}. ${s.title}</button>`).join("");
+
+    const refl={eu:"mă",tu:"te",el:"se",noi:"ne",voi:"vă",ei:"se"};
+    const parts={canta:"cântat",duce:"dus",spala:"spălat",invata:"învățat",descrie:"descris"};
+    document.querySelector("#buildForm").addEventListener("click",()=>{ const p=document.querySelector("#builderPerson").value,v=document.querySelector("#builderVerb").value; const pron=v==="duce"||v==="spala"?refl[p]+" ":""; document.querySelector("#builderOutput").textContent=`${p} → să ${pron}fi ${parts[v]} / să nu ${pron}fi ${parts[v]}`; });
+
+    const ex9 = [["政治文化中心","centru politic și cultural"],["交通枢纽","nod de comunicații"],["庄严宣告","a proclama solemn"],["掌握自己的命运","a-și lua destinul în propriile mâini"],["举行升国旗仪式","a avea loc ceremonia de înălțare a drapelului de stat|a organiza ceremonia de înălțare a drapelului de stat"],["吸引游客的地方","loc de atracție pentru turiști"],["祭天以求五谷丰登","a omagia cerul pentru a obține recolte bogate|a depune ofrande și a omagia cerul pentru a obține recolte bogate"],["观赏红叶","a admira frunzele roșii|a admira frunzele purpurii"],["《红楼梦》","Visul din pavilionul roșu"]];
+    document.querySelector("#ex9").innerHTML=`<p class="prompt">Cum se traduc în limba română următoarele expresii sau sintagme?</p>${ex9.map((x,i)=>`<div class="item inline-sentence"><label>${i+1}. ${x[0]}</label><input data-answer="${x[1]}"></div>`).join("")}<div class="exercise-actions"><button class="submit-btn">提交并查看答案</button><span class="status"></span></div><div class="answer-panel"><h4>参考答案</h4><ol>${ex9.map(x=>`<li>${x[1].split("|")[0]}</li>`).join("")}</ol></div>`;
+
+    const ex15 = [
+      ["要是我在那儿，一定要阻止他这样做。","Să fi fost eu acolo, l-aș fi împiedicat neapărat să facă așa."],
+      ["你要是再等几分钟，就能见到她了。","Să mai fi așteptat câteva minute, ai fi putut-o vedea."],
+      ["他们是不是已经回家了？","Să se fi întors ei acasă?"],
+      ["要是你跟他说，他一定会帮助你的。","Să-i fi spus, te-ar fi ajutat cu siguranță."],
+      ["北京自12世纪起陆续成为金、元、明、清等朝代的首都，先后有33个皇帝在此执政。","Începând din secolul al XII-lea, Beijingul a devenit succesiv capitala dinastiilor Jin, Yuan, Ming și Qing; 33 de împărați au domnit aici."],
+      ["1949年10月1日，毛泽东主席在天安门城楼庄严宣告中华人民共和国成立。","La 1 octombrie 1949, președintele Mao Zedong a proclamat solemn, de pe terasa Porții Tian’anmen, instaurarea Republicii Populare Chineze."],
+      ["每天清晨，有无数的群众在天安门广场观看升国旗仪式。","În fiecare dimineață, numeroși cetățeni asistă în Piața Tian’anmen la ceremonia de înălțare a drapelului de stat."],
+      ["明、清两代的皇帝每年要两次到天坛祭天，以求五谷丰登。","În timpul dinastiilor Ming și Qing, împărații mergeau de două ori pe an la Templul Cerului, depuneau ofrande și omagiau cerul pentru a obține recolte bogate."],
+      ["位于北京西北郊的颐和园是一处世界闻名的皇家园林。","Palatul de Vară, situat în suburbia nord-vestică a Beijingului, este o grădină imperială renumită în întreaga lume."],
+      ["每年深秋是去香山观赏红叶的最好时节。","În fiecare an, sfârșitul toamnei este cea mai bună perioadă pentru a merge la Colina Parfumată și a admira frunzele roșii."],
+      ["这个展览在军事博物馆举行。","Această expoziție are loc la Muzeul Militar."],
+      ["中华世纪坛是中国人民憧憬新世纪的象征。","Altarul Secolului din China este simbolul aspirațiilor poporului chinez pentru noul secol."]
+    ];
+    document.querySelector("#ex15").innerHTML=`<p class="prompt">Traduceți în limba română:</p>${ex15.map((x,i)=>`<div class="item"><label>${i+1}. ${x[0]}</label><textarea style="min-height:62px"></textarea></div>`).join("")}<div class="exercise-actions"><button class="submit-btn">提交并查看答案</button><span class="status"></span></div><div class="answer-panel"><h4>参考译文</h4><ol>${ex15.map(x=>`<li>${x[1]}</li>`).join("")}</ol><p><small>说明：翻译题允许等义表达；应重点检查时态、格关系、词序与搭配。</small></p></div>`;
+
+    const norm=s=>s.trim().toLowerCase().replace(/[.,!?;:]/g,"").replace(/\s+/g," ");
+    document.querySelectorAll(".submit-btn").forEach(btn=>btn.addEventListener("click",()=>{
+      const body=btn.closest(".exercise-body"), fields=[...body.querySelectorAll("input,textarea,select")].filter(x=>!x.disabled), status=body.querySelector(".status"), panel=body.querySelector(".answer-panel");
+      if(fields.length && fields.every(f=>!f.value.trim())){status.textContent="请先作答，再提交查看参考答案。"; fields[0].focus(); return;}
+      const scored=fields.filter(f=>f.dataset.answer); let good=0;
+      scored.forEach(f=>{const ok=f.dataset.answer.split("|").some(a=>norm(a)===norm(f.value)); f.classList.toggle("correct",ok); f.classList.toggle("incorrect",!ok); if(ok)good++;});
+      panel.classList.add("visible"); status.textContent=scored.length?`已提交：${good}/${scored.length} 项与参考答案一致。`:`已提交。参考答案已解锁。`;
+      panel.scrollIntoView({behavior:"smooth",block:"nearest"});
+    }));
+    renderVocab(); renderExpressions();
+  </script>
+</body>
+</html>
